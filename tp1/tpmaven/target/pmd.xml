@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pmd version="4.2.5" timestamp="2013-09-23T17:59:58.439">
+<file name="/ws/10004089/workspace/GLA_KK/tp1/tpmaven/src/main/java/fr/istic/master2/tpmaven/App.java">
+<violation beginline="11" endline="11" begincolumn="13" endcolumn="13" rule="UnusedLocalVariable" ruleset="Unused Code Rules" package="fr.istic.master2.tpmaven" class="App" method="main" variable="i" externalInfoUrl="http://pmd.sourceforge.net/rules/unusedcode.html#UnusedLocalVariable" priority="3">
+Avoid unused local variables such as 'i'.
+</violation>
+</file>
+</pmd>
