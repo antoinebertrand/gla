@@ -8,16 +8,22 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.ManyToOne;
+import javax.persistence.OneToMany;
 
 @Entity
 public class Home {
 
-	public Home(String adress, String superficy, String iP, List<Equipements> equip) {
+	public Home() {
+		super();
+	}
+
+	public Home(String adress, String superficy, String iP, List<Equipements> equip, Person p) {
 		super();
 		this.adress = adress;
 		this.superficy = superficy;
 		this.equip = equip;
 		IP = iP;
+		this.p = p;
 	}
 
 	private int ID;
@@ -34,6 +40,7 @@ public class Home {
 		this.p = p;
 	}
 	
+	@OneToMany(mappedBy="maison")
 	public List<Equipements> getEquip() {
 		return equip;
 	}
